@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css\style.css">
+    
+    <title>Document</title>
+</head>
+
+<header>
+    <section>
+        <img src="image\afpa.png" alt="logo afpa">
+    </section>
+</header>
+
+
+<body>
+    <main>
+       
+        <form action=" formulaire" method="post">_</form>
+            
+        <section> 
+                <article>
+                    <label for="name">Nom -Prénom</label>
+                    <input type="text" name="name">
+                </article>
+
+                <article>
+                    <label for="email">Courriel</label>
+                    <input type="email" name="email">
+                </article>
+
+                <article>
+                    <label for="telephone">Téléphone</label>
+                    <input type="tel" name="telephone">
+                </article>
+                
+                <article>
+                    <label for="sexe">Vous êtes...</label>
+                    <select name="sexe">
+                        <option value="homme">Homme</option>
+                        <option value="femme">Femme</option>
+                </article>
+                
+                <article>
+                    <label for="commentaire">Commentaire</label>
+                    <textarea name="commentaire" rows="10" cols="35"></textarea>
+                </article>
+            </section>
+
+
+            <aside>
+                <section>
+                    <legend for="contacter">Quel est le meilleurs moyen de vous contacter</legend>
+                        <article> 
+                            <input type="radio" name="drone" value="telephone" checked />
+                            <label for="telephone">Téléphone</label>
+                        </article>
+
+                        <article> 
+                            <input type="radio" name="drone" value="courriel" checked />
+                            <label for="telephone">Courriel</label>
+                        </article>
+                </section>
+                
+                <section>
+                    <legend for="disponibilite">Jours de la semaine où vous êtes disponible :</legend>
+                        
+                        <article> 
+                            <input type="checkbox" name="scale" value="jour"/>
+                            <label for="lundi">Lundi</label>
+                        </article>
+
+                        <article> 
+                            <input type="checkbox" name="scale" value="jour"/>
+                            <label for="mardi">Mardi</label>
+                        </article>
+
+                        <article> 
+                            <input type="checkbox" name="scale" value="jour"/>
+                            <label for="mercredi">Mercredi</label>
+                        </article>
+                        <article>
+                            <input type="checkbox" name="scale" value="jour"/>
+                            <label for="jeudi">Jeudi</label>
+                        </article>
+                        <article> 
+                            <input type="checkbox" name="scale" value="jour"/>
+                            <label for="vendredi">Vendredi</label>
+                        </article>
+                        <article> 
+                            <input type="checkbox" name="scale" value="jour"/>
+                            <label for="samedi">Samedi</label>
+                        </article>
+                        <article> 
+                            <input type="checkbox" name="scale" value="jour"/>
+                            <label for="dimanche">Dimanche</label>
+                        </article>
+                </section>
+
+                <section>
+                    <legend for="rendez-vous">Heure appropriée pour un rendez-vous:</legend>
+
+                        <article> 
+                            <input type="checkbox" name="scale" value="jour"/>
+                            <label for="matin">Matin</label>
+                        </article>
+
+                        <article> 
+                            <input type="checkbox" name="scale" value="jour"/>
+                            <label for="apres-midi">Après-midi</label>
+                        </article></section>
+
+            </aside>
+            <footer>
+                <section>
+                    <button class="envoyer" type="button">Envoyer</button>
+                </section>
+            </footer>
+        </form>
+    </main>
+
+</body>
+</html>
