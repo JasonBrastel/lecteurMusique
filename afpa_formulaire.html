@@ -14,7 +14,7 @@
     </section>
 </header>
 
-
+<!--
 <body>
     <main>
        
@@ -112,7 +112,7 @@
                     </section>
     
             </aside>
-
+            
                 <section class="pied">
                     <footer>
                         
@@ -125,3 +125,49 @@
 
 </body>
 </html>
+
+
+-->
+
+
+<main>
+<form action="recup.php" method="get"><!--enctype="multipart/form-data" enctype utile pour <input type="file"upload fichier>-->
+    <section>
+        <article>
+            <input name="name" type="text" placeholder="Nom-prenom">
+            <input name ="email"type="email" placeholder="Courriel"required>
+            <input name="telephone" type="text" placeholder="Telephone">
+            <select name="genre">
+                <option selected disabled>Vous êtes</option>
+                <option>Homme</option>
+                <option>Femme</option>
+            </select>
+            <textarea></textarea>
+            <!--<input type="range">
+            <input type="color">
+            <input type="hidden"> -->
+        </article>
+
+
+        <article>
+            <input name="moyen" type="radio" value="telephone">&nbsp;&nbsp;Télephone
+            <input name="moyen" type="radio" value="courriel" checked>&nbsp;&nbsp;Courriel
+
+            <input name="lundi{}" type="checkbox" value="lundi">&nbsp;&nbsp;Lundi <br>
+            <input name="mardi{}" type="checkbox"value=mardi>&nbsp;&nbsp;Mardi<br>
+            <input name="mercredi{}" type="checkbox"value=mercredi>&nbsp;&nbsp;Mercredi <br>
+            <input name="jeudi{}" type="checkbox"value=jeudi>&nbsp;&nbsp;Jeudi <br>
+            <input name="vendredi{}" type="checkbox"value=vendredi>&nbsp;&nbsp;Vendredi <br>
+        </article>
+
+
+
+        <section>
+            <button type="submit">Envoyer</button>
+        </section>
+    </section>
+
+
+</main>
+
+

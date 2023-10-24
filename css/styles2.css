@@ -1,0 +1,30 @@
+header
+{
+    display: flex;
+    flex-wrap: wrap;
+}
+.button_lecture{
+    display: flex;
+    height: 25px;
+    gap: 1em;
+    flex: 1;
+    
+    
+}
+
+.volume{
+    display: flex;
+    flex: 2;
+
+ 
+}
+
+
+.lecteur{
+    display: flex;
+   
+}
+
+.recherche{
+    display: flex;
+}

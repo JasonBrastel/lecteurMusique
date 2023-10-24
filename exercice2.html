@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css\styles2.css">
+    <script type="text/javascript" src="scripts/script.js"></script>
+</head>
+<body onload="init()">
+<header>
+    <section class="button_lecture">
+        <button class="precedent" onclick="clickme()"type="button">Précédent</button>
+        <button class="lecture" onclick="lecture_pause()"type="button">Lecture</button>
+        <button class="suivant" onclick="clickme()" type="button">Suivant</button> 
+    </section>
+
+    <section class="volume">
+        <button class="moins" onclick="volume_moins()" type="button">-</button> 
+        <input class="range" onclick="volume()" type="range">
+        <button class="plus"onclick="volume_plus()" type="button">+</button> 
+    </section>
+
+    <section class="lecteur">
+        <h2>Nom artiste</h2>
+        <h3>Titre de la chanson</h3>
+        <audio id="lecteur"></audio>
+
+
+    </section>
+
+    <form action="" class="recherche">
+    <input class="champ" type="text" value="recherche"/>
+         <input class="bouton" type="button" value=" " />
+          
+     </form>
+    <section>
+
+    </section>
+
+
+</header>
+
+
+    
+</body>
+</html>
