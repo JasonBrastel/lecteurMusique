@@ -12,8 +12,102 @@ header img{
 width: 200px;
 }
 
+
+
+
 main{
     border: 2px solid black;
     border-radius: 1%;
     display:flex;
+    flex-direction: row;
+    height: 550px;
+    width: 900px;
+    flex-wrap: wrap;
+    padding: 10px;
+   
+
 }
+
+.form_left{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    flex: 0 0 40%;
+    justify-content: space-evenly;
+    gap: 2em;
+
+  
+    
+}
+
+
+
+aside{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    flex: 0 0 60%;
+    justify-content: space-between;
+    align-items: flex-start;
+    
+}
+
+legend{
+    line-height: 50px;
+    font-size: large;
+    font-weight: 600;
+}
+
+
+.pied{
+    display: flex;
+    width: 900px;
+    height: 100px;
+    flex-wrap: wrap;
+    flex-direction: row;
+    align-content: stretch;
+    align-items: flex-start;
+    margin-top: 50px;
+    justify-content: flex-start;
+}
+
+
+footer{
+    display: flex;
+    height: 75px;
+    width: 850px;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: center;
+    align-content: center;
+    
+   
+
+ 
+}
+
+button{
+    width: 800px;
+    height: 70px;
+    background-color: rgb(4, 155, 85);
+    color: aliceblue;
+}
+
+
+
+
+textarea{
+    display: flex;
+    height: 150px;
+    width: 300px;
+}
+
+
+.form_left input,select{
+    width: 300px;
+    height: 30px;
+}
+
+
+

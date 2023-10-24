@@ -18,41 +18,39 @@
 <body>
     <main>
        
-        <form action=" formulaire" method="post">_</form>
+        <form action=" formulaire" method="post"></form>
             
-        <section> 
-                <article>
-                    <label for="name">Nom -Prénom</label>
-                    <input type="text" name="name">
+        <section class = form_left> 
+                <article> 
+                    <input type="text"placeholder="Nom prenom" name="name">
                 </article>
 
                 <article>
-                    <label for="email">Courriel</label>
-                    <input type="email" name="email">
+                   
+                    <input type="email" placeholder="Courriel" name="email">
                 </article>
 
                 <article>
-                    <label for="telephone">Téléphone</label>
-                    <input type="tel" name="telephone">
+                    <input type="tel" placeholder="Télephone" name="telephone">
                 </article>
                 
                 <article>
-                    <label for="sexe">Vous êtes...</label>
-                    <select name="sexe">
+                   
+                    <select name="sexe" >
                         <option value="homme">Homme</option>
-                        <option value="femme">Femme</option>
+                        <option value="femme">Femme</option> 
+                    </select>
                 </article>
                 
                 <article>
-                    <label for="commentaire">Commentaire</label>
-                    <textarea name="commentaire" rows="10" cols="35"></textarea>
+                    <textarea class = "commentaire" type="text" placeholder="Commentaire" name="commentaire"></textarea>
                 </article>
             </section>
 
 
             <aside>
                 <section>
-                    <legend for="contacter">Quel est le meilleurs moyen de vous contacter</legend>
+                    <legend for="contacter">Quel est le meilleurs moyen de vous contacter ?</legend>
                         <article> 
                             <input type="radio" name="drone" value="telephone" checked />
                             <label for="telephone">Téléphone</label>
@@ -110,14 +108,18 @@
                         <article> 
                             <input type="checkbox" name="scale" value="jour"/>
                             <label for="apres-midi">Après-midi</label>
-                        </article></section>
-
+                        </article>
+                    </section>
+    
             </aside>
-            <footer>
-                <section>
+
+                <section class="pied">
+                    <footer>
+                        
                     <button class="envoyer" type="button">Envoyer</button>
-                </section>
-            </footer>
+                </footer>
+            </section>
+            
         </form>
     </main>
 
