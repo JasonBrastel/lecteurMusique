@@ -28,3 +28,21 @@ header
 .recherche{
     display: flex;
 }
+
+main{
+    display: flex;
+    flex-wrap: wrap;
+    margin: 10px;
+
+}
+
+.galerie{
+    display: flex;
+    flex-wrap: wrap;
+    
+}
+
+.galerie img{
+    height: 250px;
+
+}

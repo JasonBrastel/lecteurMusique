@@ -10,38 +10,39 @@
 <body onload="init()">
 <header>
     <section class="button_lecture">
-        <button class="precedent" onclick="clickme()"type="button">Précédent</button>
+        <button class="precedent" onclick="button_precedent()"type="button">Précédent</button>
         <button class="lecture" onclick="lecture_pause()"type="button">Lecture</button>
-        <button class="suivant" onclick="clickme()" type="button">Suivant</button> 
+        <button class="suivant" onclick="button_suivant()" type="button">Suivant</button> 
     </section>
 
     <section class="volume">
         <button class="moins" onclick="volume_moins()" type="button">-</button> 
-        <input class="range" onclick="volume()" type="range">
+        <input id="range" onchange="volumeChange()" min="0" max="1" type="range" step="0.1" value="1"/> <!--onchange evenemment-->
         <button class="plus"onclick="volume_plus()" type="button">+</button> 
     </section>
 
     <section class="lecteur">
+        <input id="range_musique" onchange="progressionChange()" min="0" max="1000" type="range" step="1" value="0"/>
         <h2>Nom artiste</h2>
         <h3>Titre de la chanson</h3>
         <audio id="lecteur"></audio>
-
-
     </section>
 
     <form action="" class="recherche">
     <input class="champ" type="text" value="recherche"/>
          <input class="bouton" type="button" value=" " />
-          
-     </form>
-    <section>
+    </form>
 
-    </section>
 
 
 </header>
+<main>
+<section class= galerie>
+    <img src= image\annie.jpg>
+    <img src= image\nightwish.jpg>
+    <img src= image\bob.jpg>
+</section>
 
-
-    
+</main>    
 </body>
 </html>
