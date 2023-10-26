@@ -22,26 +22,29 @@
     </section>
 
     <section class="lecteur">
-        <input id="range_musique" onchange="progressionChange()" min="0" max="1000" type="range" step="1" value="0"/>
+        <input id="range_musique" min="0" max="100" type="range" step="1" value="0" oninput="progress()"/>
         <h2>Nom artiste</h2>
         <h3>Titre de la chanson</h3>
-        <audio id="lecteur"></audio>
+        <audio id="lecteur" ontimeupdate="changeProgress()" ondurationchange="changeDuration()" onended="fin_musique()" ></audio>
     </section>
 
     <form action="" class="recherche">
     <input class="champ" type="text" value="recherche"/>
          <input class="bouton" type="button" value=" " />
     </form>
-
-
-
 </header>
+
+
+
 <main>
-<section class= galerie>
-    <img src= image\annie.jpg>
-    <img src= image\nightwish.jpg>
-    <img src= image\bob.jpg>
-</section>
+
+		<article id="pochette"></article>
+		<img></img>
+		<section>
+		
+
+
+	</body>
 
 </main>    
 </body>
