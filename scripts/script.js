@@ -1,16 +1,16 @@
 let playlist = [
     {
-        titre: "Hold_On_a_Minute",
+        titre: "Hold On a Minute",
         artiste: "Silent Partner",
         musique: "musique/Hold_On_a_Minute.mp3",
-        image: "image/1.jpg",
+        image: "image/1.jpg"
 
     },
     {
         titre: "Blue Skies",
         artiste: "Silent Partner",
         musique: "musique/Blue_Skies.mp3",
-        image: "image/2.jpg",
+        image: "image/2.jpg"
 
     },
 
@@ -18,7 +18,7 @@ let playlist = [
         titre: "Cartoon hoedown",
         artiste: "Silent Partner",
         musique: "musique/Cartoon_Hoedown.mp3",
-        image: "image/3.jpg",
+        image: "image/3.jpg"
 
     },
 ]
@@ -38,6 +38,20 @@ function init() {       //intialise le tableau let playlist (liste de chanson)
     }
 }    
 
+function clickcard(i) {
+    document.getElementById('lecteur').src = playlist[i].musique;
+    index = i;
+    lecteur.play();
+    
+    const nomArtiste=document.querySelector(".lecteur h2");  //recupere le h2 du parent lecteur afin de cibler par la const nom Artiste
+    nomArtiste.textContent = playlist[i].artiste; // recupere le nom de l'artiste de dans le tableau en affichant grace a textContent
+
+    const nomChanson =document.querySelector(".lecteur h3");
+    nomChanson.textContent = playlist[i].titre;
+}
+
+
+
 function lecture_pause() { //bouton lecture pause
 
     let autoLecture = document.getElementById('lecteur');
@@ -45,9 +59,11 @@ function lecture_pause() { //bouton lecture pause
 
     if (lecteur.paused) {
         lecteur.play();
+        playPause.Btn.textContent ="Pause";
     }
     else {
         lecteur.pause()
+        playPause.Btn.textContent ="Play";
     }
 
 }
@@ -62,7 +78,6 @@ function volume_moins() {
 }
 function volume_plus() {
     if (document.getElementById("lecteur").volume.toFixed(1) < 1) {
-
         document.getElementById("lecteur").volume += 0.1
         document.getElementById("range").value = document.getElementById("lecteur").volume;
 
@@ -123,16 +138,4 @@ function fin_musique() { //boucle infini le lecteur  a la fin de la chanson grac
 }
 
 
-function galerie_image() {
-
-
-    document.getElementById('pochette')
-
-    let img = document.createElement('img');
-    img.src = "image/annie.jpg";
-
-    document.getElementById('pochettes').append(img);
-
-
-}
 

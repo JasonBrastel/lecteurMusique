@@ -25,10 +25,10 @@
         <input id="range_musique" min="0" max="100" type="range" step="1" value="0" oninput="progress()"/>
         <h2>Nom artiste</h2>
         <h3>Titre de la chanson</h3>
-        <audio id="lecteur" ontimeupdate="changeProgress()" ondurationchange="changeDuration()" onended="fin_musique()" ></audio>
+        <audio id="lecteur" ontimeupdate="changeProgress()" ondurationchange="changeDuration()" onended="fin_musique()" onclick="clickcard()"></audio>
     </section>
 
-    <form action="" class="recherche">
+    <form action="" class="recherche" oninput="recherche()">
     <input class="champ" type="text" value="recherche"/>
          <input class="bouton" type="button" value=" " />
     </form>
@@ -39,8 +39,8 @@
 <main>
 
 		<article id="pochette"></article>
-		<img></img>
-		<section>
+		
+	
 		
 
 

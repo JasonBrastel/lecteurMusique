@@ -1,3 +1,13 @@
+* {
+    box-sizing: border-box;
+}
+
+html {
+    margin: 0;
+    padding: 0;
+}
+
+
 header
 {
     display: flex;
@@ -42,7 +52,22 @@ main{
     
 }
 
-.galerie img{
-    height: 250px;
+main{
+    width: 70%;
+    margin: auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+}
 
+#pochette{
+    display: flex;
+    margin-top: 10%;
+    gap: 1em;
+
+}
+
+#pochette .musique{
+    border: solid 3px black;
 }
